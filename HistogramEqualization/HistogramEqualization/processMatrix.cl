@@ -1,0 +1,1 @@
+__kernel void procMat (__global const int* src_a,__global int* res,const int min,const int max){const int idx=get_global_id(0);res[idx]=(255*(src_a[idx]-min))/(max-min);}
